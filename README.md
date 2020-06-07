@@ -82,18 +82,16 @@ api.get('items')
 To create a collection point, make a **POST** request and send a `json` with the information in the body of the request, just like the example below
 
 ```json
-{
-	"name": "Name_of_Market",
+{ 
+  "name": "Name_of_Market",
   "email": "market@market.com",
-	"whatsapp": "+55 211234-0987",
-	"latitude": "-35.0394822",
-	"longitude": "-27.0394822",
-	"city": "Fake_City",
-	"uf": "UF",
-	"items": [ // These items are the types of materials that the company collects
-		1,
-		3,
-		6
-	]
+  "whatsapp": "+55 211234-0987",
+  "latitude": "-35.0394822",
+  "longitude": "-27.0394822",
+  "city": "Fake_City",
+  "uf": "UF",
+  "items": [ 1, 3, 6 ]
 }
+// The items in the penultimate line are the items referring to the collection materials, 
+// they are the ids in the bank of each collection item
 ```
